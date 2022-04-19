@@ -1,3 +1,58 @@
+header .nomSite {
+  min-height: 140px;
+  position: relative;
+}
+header .nomSite img {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(20px, 20em, 400px);
+}
 
+footer {
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+}
+footer #nomSiteFooter {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+footer #nomSiteFooter img {
+  filter: invert(100%);
+  width: 160px;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a i {
+  display: inline-block;
+}
+footer ul li a .fa-utensils {
+  margin-right: 9px;
+}
+footer ul li a .fa-handshake-angle {
+  margin-right: 3px;
+}
+footer ul li a span {
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
 
 /*# sourceMappingURL=style.css.map */

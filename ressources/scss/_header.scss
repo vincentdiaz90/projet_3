@@ -1,0 +1,15 @@
+header{
+    .nomSite{
+        min-height: 140px;
+        position: relative;
+
+        img{
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: clamp(20px, 20em, 400px);
+        }
+    }
+}
