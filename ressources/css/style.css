@@ -79,5 +79,49 @@ body main #localisation #localisationIcone i {
 body main #localisation p {
   font-size: 25px;
 }
+body main #reservation {
+  min-height: 250px;
+  background-color: rgba(227, 227, 227, 0.45);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  text-align: center;
+}
+body main #reservation h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 60px;
+  margin: 50px 10px 0px 10px;
+}
+body main #reservation h3 {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+body main #reservation button {
+  background-image: linear-gradient(to left top, #9356DC 15%, #FF79DA 100%);
+  padding: 15px 45px;
+  text-align: center;
+  border-radius: 999px;
+  margin: 40px auto 80px auto;
+  cursor: pointer;
+  position: relative;
+}
+body main #reservation button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 999px;
+}
+body main #reservation button a {
+  color: white;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */
