@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header .nomSite {
   min-height: 140px;
   position: relative;
@@ -272,6 +273,37 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantDescription
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-regular.fa-heart:hover + .fa-solid.fa-heart {
   display: block;
   color: #9356DC;
+}
+body main #photoALaFrancaise {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+body main #photoLaNoteEnchantée {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+body main #photoLaPaletteDuGout {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+body main #photoleDeliceDuSens {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+body main .photoRestaurant {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  position: relative;
+  z-index: 1;
+}
+body main .photoRestaurant a {
+  color: #000;
+}
+body main .photoRestaurant a i {
+  position: absolute;
+  top: -85px;
+  left: 4%;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
