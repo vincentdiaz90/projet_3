@@ -55,4 +55,29 @@ footer ul li a span {
   list-style: none;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  /*'Shrikhand',*/
+}
+body main #localisation {
+  min-height: 100px;
+  background-color: #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -1px 10px 0px grey;
+}
+body main #localisation #localisationIcone {
+  position: relative;
+}
+body main #localisation #localisationIcone i {
+  font-size: 25px;
+  position: absolute;
+  left: -55px;
+  top: -15px;
+}
+body main #localisation p {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */
