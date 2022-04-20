@@ -92,6 +92,66 @@ body{
                 }
             }
         }
+
+        #fonctionnement{
+            h2{
+                margin: 50px 20px;
+                font-size: 30px;
+            }
+            #fonctionnementFlex{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                
+                button{
+                    padding: 30px 90px;
+                    display: block;
+                    border: 1px solid #fff;
+                    box-shadow: 0px 3px 6px 0px $grey_soft;
+                    border-radius: 30px;
+                    margin: 0 auto 25px auto;
+                    text-align: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    i{
+                        display: inline-block;
+                        font-size: 25px;
+                        position: absolute;
+                        left: 45px;
+                        top: 50%;
+                        transform: translateY(-60%);
+                        color: rgba(0,0,0,0.5);
+                    }
+                    p{
+                        font-size: 17px;
+                        font-weight: 700;
+                    }
+                    span{
+                        position: absolute;
+                        left: -5px;
+                        top: 50%;
+                        transform: translateY(-60%);
+                        color: $blanc;
+    
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            background-color: $primaire;
+                            border-radius: 50%;
+                            padding: 7px;
+                            left: -8px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: -1;
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }
 
