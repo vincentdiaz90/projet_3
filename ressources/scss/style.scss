@@ -4,7 +4,6 @@
 @import '_mixins.scss';
 
 
-
 *,
 *::before,
 *::after {
@@ -88,8 +87,15 @@ body{
                     top: 0;
                     left: 0;
                     border-radius: 999px;
+                    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 36px 13px rgba(0,0,0,0.62); 
+                    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 36px 13px rgba(0,0,0,0.62);
+                    opacity: 0;
+                    transition: opacity 0.2s linear;
                 }
-
+                &:hover::before{
+                    opacity: 1;
+                    
+                }
             }
         }
 
@@ -114,6 +120,10 @@ body{
                     position: relative;
                     color: $noir;
                     cursor: pointer;
+
+                    background-image: linear-gradient(to right, transparent 50%, rgba(147,86,220,0.2) 50%);
+                    background-size: 200%;
+                    transition: 0.4s ease-out;
 
                     .fonctionnementButtonFlex{
                         display: flex;
@@ -156,7 +166,12 @@ body{
                         }
 
                     }
-
+                    &:hover{
+                        background-position: 100%;
+                        i{
+                            color: $primaire;
+                        }
+                    }
                 }
             }
         }
@@ -224,7 +239,31 @@ body{
                                     li{
                                         display: inline-block;
                                         letter-spacing: -2px;
+                                        animation: flash 3s linear infinite;
                                         color: $noir;
+
+                                        &:nth-child(1){
+                                            animation-delay: 0.2s;
+                                        }
+                                        &:nth-child(2){
+                                            animation-delay: 0.4s;
+                                        }
+                                        &:nth-child(3){
+                                            animation-delay: 0.6s;
+                                        }
+                                        &:nth-child(4){
+                                            animation-delay: 0.8s;
+                                        }
+                                        &:nth-child(5){
+                                            animation-delay: 1s;
+                                        }
+                                        &:nth-child(6){
+                                            animation-delay: 1.2s;
+                                        }
+                                        &:nth-child(7){
+                                            animation-delay: 1.4s;
+                                        }
+
                                     }
                                 }
                             }
@@ -360,6 +399,37 @@ body{
                             position: relative;
                             cursor: pointer;
                             overflow: hidden;
+                            opacity: 0;
+
+                            animation-name: apparition;
+                            animation-duration: 1s;
+                            animation-timing-function: linear;
+                            animation-fill-mode: forwards;
+
+                            // &:nth-child(n){
+                            //     animation-delay: calc(#{n}s);
+                            // } 
+                            
+                            &:nth-child(1){
+                                animation-delay: 0.7s;
+                            }  
+                            &:nth-child(2){
+                                animation-delay: 1.4s;
+                            }  
+                            &:nth-child(3){
+                                animation-delay: 2.1s;
+                            }  
+                            &:nth-child(4){
+                                animation-delay: 2.8s;
+                            }  
+
+                            &:hover .extensionCarteHover{
+                                transform: translateX(-90%);
+
+                                span{
+                                    opacity: 1;
+                                }
+                            }
 
                             .extensionCarteHover{ 
                                 position: absolute;
@@ -368,6 +438,8 @@ body{
                                 z-index: 20;
                                 height: 100%;
                                 width: 60%;
+                                transform: translateX(0%);
+                                transition: transform 0.5s linear;
                                 background-color: $blanc;
                                 overflow: hidden;
                                 background-color: $blanc;
@@ -378,8 +450,19 @@ body{
                                     right: 60%;
                                     font-size: 25px;
                                     letter-spacing: 2px;
+                                    opacity: 0;
+                                    transition: opacity 0.2s linear 0.4s;
                                 }
 
+                            }
+
+                            &:hover .extensionCarteHoverCheck{
+                                transform: translateX(-60px);
+
+                                i{
+                                    transform: rotate(360deg);
+                                    
+                                }
                             }
 
                             .extensionCarteHoverCheck {
@@ -390,6 +473,8 @@ body{
                                 background-color: $tertiaire;
                                 top: 0;
                                 right: -60px;
+                                transform: translateX(0);
+                                transition: transform 0.5s linear;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -397,6 +482,7 @@ body{
                                     font-size: 30px;
                                     color: $blanc;
                                     transform: rotate(0) ;
+                                    transition: transform 0.65s linear;
                                 }
                             }
 
@@ -409,9 +495,15 @@ body{
                             span{
                                 position: absolute;
                                 right: 15px;
+                                transform: translateX(0);
+                                transition: transform 0.5s linear;
                                 z-index: 30;
                                 bottom: 20%;
                                 font-weight: 600;
+                            }
+
+                            &:hover span {
+                                transform: translateX(-200%);
                             }
 
                         }
@@ -419,6 +511,46 @@ body{
                 }
             }
         }
+    }
+}
+
+@keyframes apparition {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*
+@keyframes flash{
+    0%{
+        color: $noir;
+    }
+    90%{
+        color: $noir;
+    }
+    100%{
+        color: $grey_soft;
+    }
+}
+*/
+
+@keyframes flash{
+    0%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.4);
     }
 }
 

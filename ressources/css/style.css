@@ -120,6 +120,13 @@ body main #reservation a::before {
   top: 0;
   left: 0;
   border-radius: 999px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 36px 13px rgba(0, 0, 0, 0.62);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 0px 36px 13px rgba(0, 0, 0, 0.62);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+body main #reservation a:hover::before {
+  opacity: 1;
 }
 body main #fonctionnement h2 {
   margin: 50px 20px;
@@ -141,6 +148,9 @@ body main #fonctionnement #fonctionnementFlex a {
   position: relative;
   color: #000;
   cursor: pointer;
+  background-image: linear-gradient(to right, transparent 50%, rgba(147, 86, 220, 0.2) 50%);
+  background-size: 200%;
+  transition: 0.4s ease-out;
 }
 body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex {
   display: flex;
@@ -179,6 +189,12 @@ body main #fonctionnement #fonctionnementFlex a span:after {
   top: 50%;
   transform: translateY(-50%);
   z-index: -1;
+}
+body main #fonctionnement #fonctionnementFlex a:hover {
+  background-position: 100%;
+}
+body main #fonctionnement #fonctionnementFlex a:hover i {
+  color: #9356DC;
 }
 body main #restaurants {
   background-color: rgba(227, 227, 227, 0.45);
@@ -242,7 +258,29 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .text
 body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li {
   display: inline-block;
   letter-spacing: -2px;
+  animation: flash 3s linear infinite;
   color: #000;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(5) {
+  animation-delay: 1s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(6) {
+  animation-delay: 1.2s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li:nth-child(7) {
+  animation-delay: 1.4s;
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription {
   position: relative;
@@ -393,6 +431,29 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
+  animation-name: apparition;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(1) {
+  animation-delay: 0.7s;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(2) {
+  animation-delay: 1.4s;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(3) {
+  animation-delay: 2.1s;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(4) {
+  animation-delay: 2.8s;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHover {
+  transform: translateX(-90%);
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHover span {
+  opacity: 1;
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHover {
   position: absolute;
@@ -401,6 +462,8 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   z-index: 20;
   height: 100%;
   width: 60%;
+  transform: translateX(0%);
+  transition: transform 0.5s linear;
   background-color: #fff;
   overflow: hidden;
   background-color: #fff;
@@ -411,6 +474,14 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   right: 60%;
   font-size: 25px;
   letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear 0.4s;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHoverCheck {
+  transform: translateX(-60px);
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHoverCheck i {
+  transform: rotate(360deg);
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck {
   position: absolute;
@@ -420,6 +491,8 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   background-color: #99E2D0;
   top: 0;
   right: -60px;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -428,6 +501,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   font-size: 30px;
   color: #fff;
   transform: rotate(0);
+  transition: transform 0.65s linear;
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant h3 {
   margin: 10px 0;
@@ -438,9 +512,52 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant span {
   position: absolute;
   right: 15px;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
   z-index: 30;
   bottom: 20%;
   font-weight: 600;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover span {
+  transform: translateX(-200%);
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*
+@keyframes flash{
+    0%{
+        color: $noir;
+    }
+    90%{
+        color: $noir;
+    }
+    100%{
+        color: $grey_soft;
+    }
+}
+*/
+@keyframes flash {
+  0% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
