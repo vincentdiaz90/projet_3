@@ -8,6 +8,7 @@
 
         <!-- Lien vers css personalisé -->
         <link rel="stylesheet" href="ressources/css/style.css">
+        <link rel="stylesheet" href="ressources/css/styleMediasQueries.css">
 
         <!-- cdn Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,23 +19,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 
-        <title>Ohmyfood - Le délice du sens </title>
+        <title> Ohmyfood - Le délice du sens </title>
     </head>
 
     <body>
-        
+
         <header>
             <div class="nomSite">
                 <img src="ressources/images/logo/ohmyfood.png" alt="Nom site internet ohmyfood">
             </div>
         </header>
-
+        
         <main>
-            <section class="photoRestaurant" id="photoleDeliceDuSens">
+            <div class="photoRestaurant" id="photoleDeliceDuSens">
                 <a href="accueil.html">
                     <i class="fa-solid fa-arrow-left-long"></i>
                 </a>
-            </section>
+            </div>
 
             <section class="contenuRestaurant">
                 <div class="titreRestaurant">
@@ -48,16 +49,32 @@
                         <h2>Entrées</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Tartare de thon</h3>
                                 <p>Assaisonné au yuzu</p>
                                 <span>25€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Bouchée de homard croustillant </h3>
                                 <p>Et sa farandole de petits légumes</p>
                                 <span>35€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover"></div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Velouté de cèpes </h3>
                                 <p>Aux truffes</p>
                                 <span>20€</span>
@@ -69,16 +86,34 @@
                         <h2>Plats</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Poulet rôti aux herbes de Provence </h3>
                                 <p>Et sa crème de truffe</p>
                                 <span>40€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Langouste rôtie </h3>
                                 <p>Et ses légumes de saison</p>
                                 <span>35€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Côte de boeuf Angus </h3>
                                 <p>Et sa purée de panais</p>
                                 <span>44€</span>
@@ -90,16 +125,30 @@
                         <h2>désserts</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Farandole de desserts</h3>
                                 <p>Du chef</p>
                                 <span>18€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover"></div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Crème brulée </h3>
                                 <p>Revisitée</p>
                                 <span>22€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover"></div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Tiramisu </h3>
                                 <p>À la noisette</p>
                                 <span>23€</span>
@@ -110,7 +159,7 @@
                 </div>
             </section>
         </main>
-
+        
         <footer>
             <div id="nomSiteFooter">
                 <img src="ressources/images/logo/ohmyfood.png" alt="">

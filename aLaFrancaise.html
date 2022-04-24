@@ -8,6 +8,7 @@
 
         <!-- Lien vers css personalisé -->
         <link rel="stylesheet" href="ressources/css/style.css">
+        <link rel="stylesheet" href="ressources/css/styleMediasQueries.css">
 
         <!-- cdn Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,27 +19,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 
-        <title>Ohmyfood - A la française </title>
+        <title> Ohmyfood - A la française </title>
     </head>
 
     <body>
-        
+
         <header>
             <div class="nomSite">
                 <img src="ressources/images/logo/ohmyfood.png" alt="Nom site internet ohmyfood">
             </div>
         </header>
-
+        
         <main>
-
-            <section class="photoRestaurant" id="photoALaFrancaise">
+            <div class="photoRestaurant" id="photoALaFrancaise">
                 <a href="accueil.html">
                     <i class="fa-solid fa-arrow-left-long"></i>
                 </a>
-            </section>
+            </div>
 
-            <section class="contenuRestaurant">  
-
+            <section class="contenuRestaurant">
+                
                 <div class="titreRestaurant">
                     <h1>A La Française</h1>
                     <i class="fa-regular fa-heart"></i>
@@ -50,16 +50,32 @@
                         <h2>Entrées</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Tartare de poulpe acidulé</h3>
                                 <p>Aux zestes d'orange</p>
                                 <span>25€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Velouté de légumes d'antan</h3>
                                 <p>Carotte, panais, topinambour</p>
                                 <span>35€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover"></div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Soupe à l'oignon</h3>
                                 <p>Revisitée</p>
                                 <span>20€</span>
@@ -71,16 +87,34 @@
                         <h2>Plats</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Coquilles Saint-Jacques</h3>
                                 <p>Accompagnées d'une purée de panais</p>
                                 <span>40€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Magret de canard</h3>
                                 <p>Et parmentier de pommes de terre</p>
                                 <span>35€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                                 <p>Sur son lit de gnocchis aux légumes</p>
                                 <span>44€</span>
@@ -92,16 +126,34 @@
                         <h2>désserts</h2>
                         <div class="platRestaurantTypeDetail">
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Pétales de violettes glacés</h3>
                                 <p>Et purée de noisettes</p>
                                 <span>18€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Fondant au chocolat</h3>
                                 <p>Revisité</p>
                                 <span>22€</span>
                             </div>
                             <div class="DetailCarteRestaurant">
+                                <div class="extensionCarteHover">
+                                    <span>...</span>
+                                </div>
+                                <div class="extensionCarteHoverCheck">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
                                 <h3>Millefeuille croustillant</h3>
                                 <p>Myrtilles et pâte d’amande</p>
                                 <span>23€</span>
@@ -111,9 +163,8 @@
 
                 </div>
             </section>
-
         </main>
-
+        
         <footer>
             <div id="nomSiteFooter">
                 <img src="ressources/images/logo/ohmyfood.png" alt="">

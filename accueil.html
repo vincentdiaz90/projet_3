@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="fr">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
 
         <!-- Lien vers css personalisé -->
         <link rel="stylesheet" href="ressources/css/style.css">
+        <link rel="stylesheet" href="ressources/css/styleMediasQueries.css">
 
         <!-- cdn Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,11 +19,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 
-        <title> Ohmyfood - Accueil</title>
+        <title>Ohmyfood - Accueil</title>
     </head>
-
     <body>
-        
+
         <header>
             <div class="nomSite">
                 <img src="ressources/images/logo/ohmyfood.png" alt="Nom site internet ohmyfood">
@@ -41,29 +41,34 @@
             <section id="reservation">
                 <h2>Reservez le menu qui vous convient</h2>
                 <h3>Découvrez des restaurants d'exception, selectionné par nos soins.</h3>
-                <button>
-                    <a href="#restaurants">Explorer nos restaurants</a>
-                </button>
+                <a href="#restaurants">Explorer nos restaurants</a>
+
             </section>
 
             <section id="fonctionnement">
                 <h2>Fonctionnement</h2>
                 <div id="fonctionnementFlex">
-                    <button>
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        <p>Choisissez un restaurant</p>
+                    <a href="#">
+                        <div class="fonctionnementButtonFlex">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
                         <span>1</span>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
+                    </a>
+                    <a href="#">
+                        <div class="fonctionnementButtonFlex">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
                         <span>2</span>
-                    </button>
-                    <button>
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
+                    </a>
+                    <a href="#">
+                        <div class="fonctionnementButtonFlex">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
                         <span>3</span>
-                    </button>
+                    </a>
                 </div>
             </section>
 
@@ -73,7 +78,7 @@
                     <div class="restaurant">
                         <a href="laPaletteDuGout.html">
                             <div class="restaurantPhoto" id="restaurantPhoto1">
-                                <span>
+                                <div class="textClignotant">
                                     <ul>
                                         <li>N</li>
                                         <li>o</li>
@@ -83,20 +88,21 @@
                                         <li>a</li>
                                         <li>u</li>
                                     </ul>
-                                </span>
+                                </div>
                             </div>
                             <div class="restaurantDescription">
                                 <h4>La palette du goût</h4>
                                 <h5>Ménilmontant</h5>
                                 <i class="fa-regular fa-heart"></i>
                                 <i class="fa-solid fa-heart"></i>
+                                
                             </div>
                         </a>
                     </div>
                     <div class="restaurant">
                         <a href="laNoteEnchantee.html">
                             <div class="restaurantPhoto" id="restaurantPhoto2">
-                                <span>
+                                <div class="textClignotant">
                                     <ul>
                                         <li>N</li>
                                         <li>o</li>
@@ -106,7 +112,7 @@
                                         <li>a</li>
                                         <li>u</li>
                                     </ul>
-                                </span>
+                                </div>
                             </div>
                             <div class="restaurantDescription">
                                 <h4>La note enchantée</h4>
@@ -140,9 +146,9 @@
                     </div>
                 </div>
             </section>
-    
             
         </main>
+
 
         <footer>
             <div id="nomSiteFooter">

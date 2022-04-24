@@ -101,16 +101,18 @@ body main #reservation h3 {
   color: rgba(0, 0, 0, 0.6);
   font-size: 20px;
 }
-body main #reservation button {
+body main #reservation a {
+  color: white;
+  font-size: clamp(15px, 8em, 25px);
   background-image: linear-gradient(to left top, #9356DC 15%, #FF79DA 100%);
-  padding: 15px 45px;
+  padding: 20px 30px;
   text-align: center;
   border-radius: 999px;
   margin: 40px auto 80px auto;
   cursor: pointer;
   position: relative;
 }
-body main #reservation button::before {
+body main #reservation a::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -118,10 +120,6 @@ body main #reservation button::before {
   top: 0;
   left: 0;
   border-radius: 999px;
-}
-body main #reservation button a {
-  color: white;
-  font-size: 18px;
 }
 body main #fonctionnement h2 {
   margin: 50px 20px;
@@ -132,38 +130,44 @@ body main #fonctionnement #fonctionnementFlex {
   flex-wrap: wrap;
   flex-direction: column;
 }
-body main #fonctionnement #fonctionnementFlex button {
-  padding: 30px 90px;
-  display: block;
+body main #fonctionnement #fonctionnementFlex a {
+  padding: 30px 0px;
+  width: clamp(250px, 70%, 400px);
   border: 1px solid #fff;
   box-shadow: 0px 3px 6px 0px rgba(227, 227, 227, 0.45);
   border-radius: 30px;
   margin: 0 auto 25px auto;
   text-align: center;
   position: relative;
+  color: #000;
   cursor: pointer;
 }
-body main #fonctionnement #fonctionnementFlex button i {
+body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-around;
+  padding: 0px 15px;
+}
+body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex i {
   display: inline-block;
-  font-size: 25px;
-  position: absolute;
-  left: 45px;
-  top: 50%;
-  transform: translateY(-60%);
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
 }
-body main #fonctionnement #fonctionnementFlex button p {
-  font-size: 17px;
+body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex p {
+  display: inline-block;
+  font-size: 20px;
   font-weight: 700;
 }
-body main #fonctionnement #fonctionnementFlex button span {
+body main #fonctionnement #fonctionnementFlex a span {
   position: absolute;
   left: -5px;
   top: 50%;
   transform: translateY(-60%);
   color: #fff;
 }
-body main #fonctionnement #fonctionnementFlex button span:after {
+body main #fonctionnement #fonctionnementFlex a span:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -192,11 +196,10 @@ body main #restaurants #restaurantContainer {
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 15px;
-  margin: 0 5%;
 }
 body main #restaurants #restaurantContainer .restaurant {
   min-height: 200px;
-  width: clamp(250px, 70%, 350px);
+  width: clamp(250px, 90%, 450px);
   border-radius: 15px;
   background-color: #fff;
   cursor: pointer;
@@ -224,7 +227,7 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto {
   min-height: 160px;
   position: relative;
 }
-body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto span {
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant {
   background-color: #99E2D0;
   display: inline-block;
   padding: 5px 10px;
@@ -233,10 +236,10 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto span 
   top: 5%;
   right: 5%;
 }
-body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto span ul {
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul {
   text-align: center;
 }
-body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto span ul li {
+body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto .textClignotant ul li {
   display: inline-block;
   letter-spacing: -2px;
   color: #000;
@@ -259,7 +262,6 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantDescription
   top: 5px;
   right: 10px;
   font-size: 20px;
-  cursor: pointer;
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-solid.fa-heart {
   background-image: linear-gradient(to left top, #9356DC 15%, #FF79DA 100%);
@@ -399,8 +401,6 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   z-index: 20;
   height: 100%;
   width: 60%;
-  transform: translateX(0%);
-  transition: transform 0.5s linear;
   background-color: #fff;
   overflow: hidden;
   background-color: #fff;
@@ -420,8 +420,6 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   background-color: #99E2D0;
   top: 0;
   right: -60px;
-  transform: translateX(0);
-  transition: transform 0.5s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,6 +427,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck i {
   font-size: 30px;
   color: #fff;
+  transform: rotate(0);
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant h3 {
   margin: 10px 0;
