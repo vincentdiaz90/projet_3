@@ -58,7 +58,6 @@ footer ul li a span {
 
 body {
   font-family: "Roboto", sans-serif;
-  /*'Shrikhand',*/
 }
 body main #localisation {
   min-height: 100px;
@@ -260,6 +259,7 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantDescription
   top: 5px;
   right: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-solid.fa-heart {
   display: none;
@@ -304,6 +304,134 @@ body main .photoRestaurant a i {
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
+}
+body main .contenuRestaurant {
+  padding-top: 40px;
+  background-color: #e3e3e3;
+  border-radius: 50px 50px 0 0;
+  margin-top: -150px;
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+}
+body main .contenuRestaurant .titreRestaurant {
+  position: relative;
+}
+body main .contenuRestaurant .titreRestaurant h1 {
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  margin-bottom: 60px;
+}
+body main .contenuRestaurant .titreRestaurant i {
+  position: absolute;
+  top: 3px;
+  left: calc(135px + 50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+body main .contenuRestaurant .titreRestaurant .fa-solid.fa-heart {
+  display: none;
+}
+body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart {
+  display: block;
+}
+body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart:hover {
+  display: none;
+}
+body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart:hover + .fa-solid.fa-heart {
+  display: block;
+  color: #9356DC;
+}
+body main .contenuRestaurant .platRestaurant {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 100px;
+  margin-bottom: 100px;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType h2 {
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-left: 18%;
+  position: relative;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType h2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  background-color: #99E2D0;
+  border: 2px solid #99E2D0;
+  bottom: 5px;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant {
+  padding: 5px 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 350px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHover {
+  position: absolute;
+  right: -60%;
+  top: 0;
+  z-index: 20;
+  height: 100%;
+  width: 60%;
+  transform: translateX(0%);
+  transition: transform 0.5s linear;
+  background-color: #fff;
+  overflow: hidden;
+  background-color: #fff;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHover span {
+  position: absolute;
+  bottom: 14px;
+  right: 60%;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck {
+  position: absolute;
+  z-index: 40;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  top: 0;
+  right: -60px;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck i {
+  font-size: 30px;
+  color: #fff;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant h3 {
+  margin: 10px 0;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant p {
+  margin-bottom: 11px;
+}
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant span {
+  position: absolute;
+  right: 15px;
+  z-index: 30;
+  bottom: 20%;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

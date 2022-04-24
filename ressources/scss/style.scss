@@ -17,7 +17,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    /*'Shrikhand',*/
 
     main{
 
@@ -240,6 +239,7 @@ body{
                                 top: 5px;
                                 right: 10px;
                                 font-size: 20px;
+                                cursor: pointer;
                             
                             }
     
@@ -296,7 +296,158 @@ body{
                 }
             }
         }
+        .contenuRestaurant{
+            padding-top: 40px;
+            background-color: $grey;
+            border-radius: 50px 50px 0 0;
+            margin-top: -150px;
+            z-index: 1000;
+            position: relative;
+            overflow: hidden;
+
+            .titreRestaurant{
+                position: relative;
+
+                h1{
+                    text-align: center;
+                    font-family: 'Shrikhand', sans-serif;
+                    margin-bottom: 60px;
+                }
+
+                i{
+                    position: absolute;
+                    top: 3px;
+                    left: calc(135px + 50%);
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
+                .fa-solid.fa-heart{
+                    display: none;
+                }
+                .fa-regular.fa-heart{
+                    display: block;
+
+                    &:hover{
+                        display: none;
+                        
+                    }
+                    &:hover + .fa-solid.fa-heart{
+                        display: block;
+                        color: $primaire;
+                    }
+                }
+            }
+            .platRestaurant{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                row-gap: 100px;
+                margin-bottom: 100px;
+
+                .platRestaurantType{
+
+                    h2{
+                        font-size: 17px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        margin-left: 18%;
+                        position: relative;
+
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 40px;
+                            background-color: $tertiaire;
+                            border: 2px solid $tertiaire;
+                            bottom: 5px;
+                        }
+                    }
+                    .platRestaurantTypeDetail{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        row-gap: 25px;
+                        
+                        .DetailCarteRestaurant{
+                            padding: 5px 15px;
+                            background-color: $blanc;
+                            border-radius: 15px;
+                            min-width: 350px ;
+                            position: relative;
+                            cursor: pointer;
+                            overflow: hidden; 
+
+
+                            .extensionCarteHover{ 
+                                position: absolute;
+                                right: -60%;
+                                top: 0;
+                                z-index: 20;
+                                height: 100%;
+                                width: 60%;
+                                transform: translateX(0%);
+                                transition: transform 0.5s linear;
+                                background-color: $blanc;
+                                overflow: hidden;
+                                background-color: $blanc;
+
+                                span{
+                                    position: absolute;
+                                    bottom: 14px;
+                                    right: 60%;
+                                    font-size: 25px;
+                                    letter-spacing: 2px;
+
+
+                                }
+
+                            }
+
+                            .extensionCarteHoverCheck {
+                                position: absolute;
+                                z-index: 40;
+                                width: 60px;
+                                height: 100%;
+                                background-color: $tertiaire;
+                                top: 0;
+                                right: -60px;
+                                transform: translateX(0);
+                                transition: transform 0.5s linear;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                i{
+                                    font-size: 30px;
+                                    color: $blanc;
+                                }
+                            }
+
+                            h3{
+                                margin: 10px 0;
+                            }
+                            p{
+                                margin-bottom: 11px;
+                            }
+                            span{
+                                position: absolute;
+                                right: 15px;
+                                z-index: 30;
+                                bottom: 20%;
+                                font-weight: 600;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 
 @import '_mediaQueries.scss';
