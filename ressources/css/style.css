@@ -262,17 +262,22 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantDescription
   cursor: pointer;
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-solid.fa-heart {
-  display: none;
+  background-image: linear-gradient(to left top, #9356DC 15%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 0.2s;
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-solid.fa-heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-solid.fa-heart:hover + .fa-regular.fa-heart {
+  opacity: 0;
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-regular.fa-heart {
-  display: block;
-}
-body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-regular.fa-heart:hover {
-  display: none;
-}
-body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-regular.fa-heart:hover + .fa-solid.fa-heart {
-  display: block;
-  color: #9356DC;
+  opacity: 1;
 }
 body main #photoALaFrancaise {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -330,17 +335,22 @@ body main .contenuRestaurant .titreRestaurant i {
   cursor: pointer;
 }
 body main .contenuRestaurant .titreRestaurant .fa-solid.fa-heart {
-  display: none;
+  background-image: linear-gradient(to left top, #9356DC 15%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 0.2s;
+}
+body main .contenuRestaurant .titreRestaurant .fa-solid.fa-heart:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+body main .contenuRestaurant .titreRestaurant .fa-solid.fa-heart:hover + .fa-regular.fa-heart {
+  opacity: 0;
 }
 body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart {
-  display: block;
-}
-body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart:hover {
-  display: none;
-}
-body main .contenuRestaurant .titreRestaurant .fa-regular.fa-heart:hover + .fa-solid.fa-heart {
-  display: block;
-  color: #9356DC;
+  opacity: 1;
 }
 body main .contenuRestaurant .platRestaurant {
   display: flex;

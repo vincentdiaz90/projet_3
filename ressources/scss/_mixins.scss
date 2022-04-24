@@ -1,0 +1,27 @@
+@mixin gradiant {
+    background-image: linear-gradient(to left top, $primaire  15%, $secondaire  100%);
+}
+
+@mixin icone {
+    .fa-solid.fa-heart{
+        @include gradiant;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: all 0.2s;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1);
+
+            + .fa-regular.fa-heart{
+                opacity: 0;
+            }
+        }
+    }
+
+    .fa-regular.fa-heart{
+        opacity: 1;
+    }
+}
