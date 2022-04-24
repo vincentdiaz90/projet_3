@@ -559,5 +559,75 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
     transform: scale(1.4);
   }
 }
+@media screen and (min-width: 768px) {
+  body main #fonctionnement {
+    margin: 0 50px 50px 50px;
+  }
+  body main #fonctionnement h2 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  body main #fonctionnement #fonctionnementFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+  body main #fonctionnement #fonctionnementFlex button span {
+    left: 50%;
+    top: 2px;
+    transform: translateY(-60%);
+  }
+  body main #restaurants {
+    padding-bottom: 100px;
+  }
+  body main #restaurants h2 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  body main #restaurants #restaurantContainer {
+    justify-content: space-around;
+    flex-direction: row;
+    row-gap: 15px;
+    gap: 50px 20px;
+  }
+  body main .contenuRestaurant .titreRestaurant h1 {
+    font-size: 40px;
+  }
+  body main .contenuRestaurant .titreRestaurant i {
+    top: 8px;
+    left: calc(230px + 50%);
+    font-size: 40px;
+  }
+  body main .contenuRestaurant .platRestaurant {
+    margin: 100px;
+  }
+  body main .contenuRestaurant .platRestaurant .platRestaurantType h2 {
+    display: inline-block;
+    margin: 0 0 60px 0;
+  }
+  body main .contenuRestaurant .platRestaurant .platRestaurantType h2::before {
+    width: 100%;
+  }
+  body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 75px;
+    row-gap: 50px;
+  }
+  body footer #nomSiteFooter {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  body footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 40px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
