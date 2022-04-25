@@ -30,15 +30,9 @@ body{
             align-items: center;
             box-shadow: 0px -1px 10px 0px grey;
 
-            #localisationIcone{
-                position: relative;
-
-                i{
-                    font-size: 25px;
-                    position: absolute;
-                    left: -55px;
-                    top: -15px;
-                }
+            i{
+                font-size: 25px;
+                margin-right: 20px;
             }
 
             p{
@@ -182,7 +176,7 @@ body{
             padding-top: 50px;
             padding-bottom: 50px;
 
-            h2{
+            h1{
                 margin: 0px 0px 20px 20px;
                 font-size: 30px;
             }
@@ -197,7 +191,7 @@ body{
 
                 .restaurant{
                     min-height: 200px;
-                    width: clamp(250px, 90%, 450px);
+                    width: clamp(250px, 95%, 400px);
                     border-radius: 15px;
                     background-color: #fff;
                     cursor: pointer;
@@ -396,7 +390,7 @@ body{
                             padding: 5px 15px;
                             background-color: $blanc;
                             border-radius: 15px;
-                            min-width: 350px ;
+                            width: 350px ;
                             position: relative;
                             cursor: pointer;
                             overflow: hidden;
@@ -406,10 +400,6 @@ body{
                             animation-duration: 1s;
                             animation-timing-function: linear;
                             animation-fill-mode: forwards;
-
-                            // &:nth-child(n){
-                            //     animation-delay: calc(#{n}s);
-                            // } 
                             
                             &:nth-child(1){
                                 animation-delay: 0.7s;
@@ -492,6 +482,7 @@ body{
                             }
                             p{
                                 margin-bottom: 11px;
+                                width: 90%;
                             }
                             span{
                                 position: absolute;
@@ -529,19 +520,6 @@ body{
         opacity: 1;
     }
 }
-/*
-@keyframes flash{
-    0%{
-        color: $noir;
-    }
-    90%{
-        color: $noir;
-    }
-    100%{
-        color: $grey_soft;
-    }
-}
-*/
 
 @keyframes flash{
     0%{

@@ -132,14 +132,9 @@ body main #localisation {
   align-items: center;
   box-shadow: 0px -1px 10px 0px grey;
 }
-body main #localisation #localisationIcone {
-  position: relative;
-}
-body main #localisation #localisationIcone i {
+body main #localisation i {
   font-size: 25px;
-  position: absolute;
-  left: -55px;
-  top: -15px;
+  margin-right: 20px;
 }
 body main #localisation p {
   font-size: 25px;
@@ -266,7 +261,7 @@ body main #restaurants {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-body main #restaurants h2 {
+body main #restaurants h1 {
   margin: 0px 0px 20px 20px;
   font-size: 30px;
 }
@@ -280,7 +275,7 @@ body main #restaurants #restaurantContainer {
 }
 body main #restaurants #restaurantContainer .restaurant {
   min-height: 200px;
-  width: clamp(250px, 90%, 450px);
+  width: clamp(250px, 95%, 400px);
   border-radius: 15px;
   background-color: #fff;
   cursor: pointer;
@@ -492,7 +487,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   padding: 5px 15px;
   background-color: #fff;
   border-radius: 15px;
-  min-width: 350px;
+  width: 350px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -573,6 +568,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant p {
   margin-bottom: 11px;
+  width: 90%;
 }
 body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant span {
   position: absolute;
@@ -600,19 +596,6 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
     opacity: 1;
   }
 }
-/*
-@keyframes flash{
-    0%{
-        color: $noir;
-    }
-    90%{
-        color: $noir;
-    }
-    100%{
-        color: $grey_soft;
-    }
-}
-*/
 @keyframes flash {
   0% {
     transform: scale(1);
@@ -647,15 +630,14 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   body main #restaurants {
     padding-bottom: 100px;
   }
-  body main #restaurants h2 {
+  body main #restaurants h1 {
     text-align: center;
     margin-bottom: 100px;
   }
   body main #restaurants #restaurantContainer {
     justify-content: space-around;
     flex-direction: row;
-    row-gap: 15px;
-    gap: 50px 20px;
+    gap: 50px 25px;
   }
   body main .contenuRestaurant .titreRestaurant h1 {
     font-size: 40px;
