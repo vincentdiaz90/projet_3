@@ -1,6 +1,14 @@
 @media screen and (min-width: 768px){
     body{
     
+        header{
+            .nomSite{
+                img{
+                    width: clamp(20px, 20em, 800px);
+                }
+            }
+        }
+    
         main{
     
             #fonctionnement{
@@ -74,6 +82,10 @@
                             flex-wrap: wrap;
                             column-gap: 75px;
                             row-gap: 50px;
+
+                            .detailCarteRestaurant{
+                                width: 400px;
+                            }
                             
                         }
                     }

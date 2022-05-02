@@ -8,7 +8,7 @@ header .nomSite img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(20px, 20em, 400px);
+  width: clamp(20px, 20em, 200px);
 }
 
 footer {
@@ -485,7 +485,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   padding: 5px 15px;
   background-color: #fff;
   border-radius: 15px;
-  width: 400px;
+  width: 95%;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -606,6 +606,9 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   }
 }
 @media screen and (min-width: 768px) {
+  body header .nomSite img {
+    width: clamp(20px, 20em, 800px);
+  }
   body main #fonctionnement {
     margin: 0 50px 50px 50px;
   }
@@ -660,6 +663,9 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
     flex-wrap: wrap;
     column-gap: 75px;
     row-gap: 50px;
+  }
+  body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant {
+    width: 400px;
   }
   body footer #nomSiteFooter {
     text-align: center;
