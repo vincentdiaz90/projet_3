@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header .nomSite {
   min-height: 140px;
   position: relative;
@@ -199,12 +198,11 @@ body main #fonctionnement #fonctionnementFlex {
 }
 body main #fonctionnement #fonctionnementFlex a {
   padding: 30px 0px;
-  width: clamp(250px, 70%, 400px);
+  width: clamp(300px, 70%, 400px);
   border: 1px solid #fff;
   box-shadow: 0px 3px 6px 0px rgba(227, 227, 227, 0.45);
   border-radius: 30px;
   margin: 0 auto 25px auto;
-  text-align: center;
   position: relative;
   color: #000;
   cursor: pointer;
@@ -215,7 +213,6 @@ body main #fonctionnement #fonctionnementFlex a {
 body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   row-gap: 20px;
   justify-content: space-around;
   padding: 0px 15px;
@@ -224,6 +221,7 @@ body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex i {
   display: inline-block;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-out 0.1s;
 }
 body main #fonctionnement #fonctionnementFlex a .fonctionnementButtonFlex p {
   display: inline-block;
@@ -285,16 +283,16 @@ body main #restaurants #restaurantContainer .restaurant a {
   color: #000;
 }
 body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto1 {
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto3 {
-  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto4 {
-  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../images/restaurants/restaurant1.jpg);
 }
 body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto2 {
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../images/restaurants/restaurant2.jpg);
+}
+body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto3 {
+  background-image: url(../images/restaurants/restaurant3.jpg);
+}
+body main #restaurants #restaurantContainer .restaurant a #restaurantPhoto4 {
+  background-image: url(../images/restaurants/restaurant4.jpg);
 }
 body main #restaurants #restaurantContainer .restaurant a .restaurantPhoto {
   background-size: cover;
@@ -379,17 +377,17 @@ body main #restaurants #restaurantContainer .restaurant a .restaurantDescription
 body main #restaurants #restaurantContainer .restaurant a .restaurantDescription .fa-regular.fa-heart {
   opacity: 1;
 }
-body main #photoALaFrancaise {
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+body main #photoRestaurant1 {
+  background-image: url(../images/restaurants/restaurant1.jpg);
 }
-body main #photoLaNoteEnchantée {
-  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+body main #photoRestaurant2 {
+  background-image: url(../images/restaurants/restaurant2.jpg);
 }
-body main #photoLaPaletteDuGout {
-  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+body main #photoRestaurant3 {
+  background-image: url(../images/restaurants/restaurant3.jpg);
 }
-body main #photoleDeliceDuSens {
-  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+body main #photoRestaurant4 {
+  background-image: url(../images/restaurants/restaurant4.jpg);
 }
 body main .photoRestaurant {
   background-size: cover;
@@ -483,7 +481,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   align-items: center;
   row-gap: 25px;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant {
   padding: 5px 15px;
   background-color: #fff;
   border-radius: 15px;
@@ -497,25 +495,25 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(1) {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:nth-child(1) {
   animation-delay: 0.7s;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(2) {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:nth-child(2) {
   animation-delay: 1.4s;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(3) {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:nth-child(3) {
   animation-delay: 2.1s;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:nth-child(4) {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:nth-child(4) {
   animation-delay: 2.8s;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHover {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:hover .extensionCarteHover {
   transform: translateX(-90%);
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHover span {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:hover .extensionCarteHover span {
   opacity: 1;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHover {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant .extensionCarteHover {
   position: absolute;
   right: -60%;
   bottom: 0;
@@ -528,7 +526,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   overflow: hidden;
   background-color: #fff;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHover span {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant .extensionCarteHover span {
   position: absolute;
   bottom: 14px;
   right: 60%;
@@ -537,13 +535,13 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   opacity: 0;
   transition: opacity 0.2s linear 0.4s;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHoverCheck {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:hover .extensionCarteHoverCheck {
   transform: translateX(-60px);
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover .extensionCarteHoverCheck i {
-  transform: rotate(360deg);
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:hover .extensionCarteHoverCheck i {
+  transform: rotate(-360deg);
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant .extensionCarteHoverCheck {
   position: absolute;
   z-index: 40;
   width: 60px;
@@ -557,20 +555,20 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   justify-content: center;
   align-items: center;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant .extensionCarteHoverCheck i {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant .extensionCarteHoverCheck i {
   font-size: 30px;
   color: #fff;
   transform: rotate(0);
-  transition: transform 0.65s linear;
+  transition: transform 0.45s linear;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant h3 {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant h3 {
   margin: 10px 0;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant p {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant p {
   margin-bottom: 11px;
   width: 90%;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant span {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant span {
   position: absolute;
   right: 15px;
   transform: translateX(0);
@@ -579,7 +577,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
   bottom: 20%;
   font-weight: 600;
 }
-body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .DetailCarteRestaurant:hover span {
+body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurantTypeDetail .detailCarteRestaurant:hover span {
   transform: translateX(-200%);
 }
 
@@ -622,7 +620,7 @@ body main .contenuRestaurant .platRestaurant .platRestaurantType .platRestaurant
     column-gap: 30px;
     row-gap: 50px;
   }
-  body main #fonctionnement #fonctionnementFlex button span {
+  body main #fonctionnement #fonctionnementFlex a span {
     left: 50%;
     top: 2px;
     transform: translateY(-60%);
